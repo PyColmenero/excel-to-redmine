@@ -15,7 +15,7 @@ class App extends React.Component {
       tableSize: [0, 0],
       excelFilename: "",
       redmineCode: "",
-      redmineVisibility: "d-none",
+      redmineCodeVisibility: "d-none",
       excelTableVisibility: "d-none",
       loadingVisibility: "d-none",
       dragFileVisibility: "",
@@ -307,6 +307,7 @@ class App extends React.Component {
       this.setState({ "loadingVisibility": "d-none" });
       this.setState({ "excel2DArray": table });
       this.setState({ "excelTableVisibility": "" });
+      this.setState({ "redmineCodeVisibility": "" });
       this.setState({ className: 'drop-zone-hide' });
     }, 1000);
   }
@@ -395,7 +396,7 @@ class App extends React.Component {
   back() {
     this.setState({ detectDragVisibility: '' });
     this.setState({ dragFileVisibility: '' });
-    this.setState({ redmineVisibility: 'd-none' });
+    this.setState({ redmineCodeVisibility: 'd-none' });
     this.setState({ excelTableVisibility: 'd-none' });
     this.setState({ className: 'drop-zone-hide' });
     this.setState({ redmineCode: '' });
@@ -524,6 +525,7 @@ class App extends React.Component {
             rowClick={this.rowClick.bind(this)}
             back={this.back.bind(this)}
             redmineCode={this.state.redmineCode}
+            redmineCodeVisibility={this.state.redmineCodeVisibility}
           ></EditTable>
           <div
             id="detectDrag"

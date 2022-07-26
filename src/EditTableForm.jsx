@@ -7,14 +7,14 @@ export class EditTableForm extends React.Component {
         super(props);
     }
 
-    //     // this.state = {
-    //     //     color: "#fff"
-    //     // }
-    //     // this.ColorPicker = () => {
-    //     //     return (
-    //     //         <input type="color" value={this.state.color} onChange={e => this.setState({color:e.target.value})} />
-    //     //     );
-    //     // }
+        // this.state = {
+        //     color: "#fff"
+        // }
+        // this.ColorPicker = () => {
+        //     return (
+        //         <input type="color" value={this.state.color} onChange={e => this.setState({color:e.target.value})} />
+        //     );
+        // }
 
     // }
 
@@ -40,7 +40,7 @@ export class EditTableForm extends React.Component {
                         background color
                     </label>
                 </div>
-                <input className="me-3" type="color" id="bgColorTool" defaultValue="#fff" />
+                <input className="me-3" type="color" id="bgColorTool" defaultValue="#ffffff" />
             </form>
         )
     }

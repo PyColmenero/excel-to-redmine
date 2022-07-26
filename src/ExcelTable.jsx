@@ -29,7 +29,7 @@ export class ExcelTable extends React.Component {
 
     render() {
         return (
-            <div id="tableContent">
+            <div id="tableContent" className={this.props.riseCodeLevel}>
                 <table className="table">
                     <thead>
                         <tr>
