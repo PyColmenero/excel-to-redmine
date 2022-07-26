@@ -220,7 +220,6 @@ class App extends React.Component {
 
       }
     }
-    console.log(merges[17]);
 
     if (table[0][0].value.length === 0 && table[1][0].value.length !== 0 && table[0][1].value.length !== 0) {
       for (let z = 1; z < table[0].length; z++) {
@@ -235,6 +234,7 @@ class App extends React.Component {
     this.setState({ "dragFileVisibility": "d-none" });
     this.setState({ "loadingVisibility": "" });
     this.getRedmineTableCode(table);
+    this.excelInput.value = "";
 
 
   }
@@ -388,7 +388,7 @@ class App extends React.Component {
 
     const fileExtension = filename.split(".").at(-1)
     if (this.allowedExtensions.includes(fileExtension)) {
-      this.readExcel(file)
+      this.readExcel(file);
     }
 
     this.setState({ className: 'drop-zone-hide' });

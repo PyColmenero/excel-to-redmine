@@ -9,6 +9,7 @@ Once you have done the first step, your file will be procesated and an image lik
 <img src="./docs/loading.PNG" width="45%"> <br/>
 
 When it has loaded, your excel will be displayed as a HTML table. Unfortunately, cells format can't be read from an excel, so you'll have to set headers or text/background color.<br/>
+To set a cell as header, you have to click in the first radio button over the table. Otherwise, to change the text/background color, you have to click the second radio button and change the color inputs with the desired colors.
 <img src="./docs/table-vanilla.PNG" width="49%">
 <img src="./docs/table-stylized.PNG" width="49%">
 <br/>
