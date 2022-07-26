@@ -15,4 +15,4 @@ To set a cell as header, you have to click in the first radio button over the ta
 <br/>
 
 While you style your table, the redmine code is being updated as well, but it is hidden. To make it visible you have to click de button with the up arrow behind the table. To copy de code you only have to click the button "Copy redmine code", instead of coping it manually: <br/>
-<img src="./docs/loading.PNG" width="45%"> <br/>
+<img src="./docs/code-panel.PNG" width="90%"> <br/>
