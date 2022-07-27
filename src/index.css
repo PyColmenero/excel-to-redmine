@@ -384,3 +384,31 @@ textarea {
   font-size: 12px;
   color: rgb(180, 180, 180);
 }
+
+#mobileNotAllowed{
+  display: none;
+}
+
+/*-device*/
+@media (max-device-aspect-ratio: 10/10) {
+  #dragPanel{
+    width: 90vw !important;
+  }
+  #dragFileHere, #detectDrag{
+    display: none;
+  }
+  #mobileNotAllowed{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #mobileNotAllowed>p{
+    color: #9a9a9a;
+  }
+}
+@media (max-aspect-ratio: 10/7) {
+  #dragPanel{
+    width: 90vw !important;
+  }
+}

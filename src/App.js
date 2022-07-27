@@ -533,6 +533,9 @@ class App extends React.Component {
             className={this.state.detectDragVisibility}>
             <input type="file" className='d-none' id="excelInput" />
           </div>
+          <div id="mobileNotAllowed">
+            <p>Sorry, web not avaliable on mobiles.</p>
+          </div>
         </div>
 
 
