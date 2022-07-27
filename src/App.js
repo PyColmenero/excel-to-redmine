@@ -364,7 +364,10 @@ class App extends React.Component {
     // guardar el nombre del documento
     this.setState({ "excelFilename": filename });
 
-    const fileExtension = filename.split(".").at(-1)
+    console.log(filename);
+    console.log(filename.split("."));
+    let fileExtension = filename.split(".");
+    fileExtension = fileExtension[fileExtension.length-1];
     if (this.allowedExtensions.includes(fileExtension)) {
       this.readExcel(file)
     }
