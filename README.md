@@ -3,7 +3,7 @@ React app built to generate redmine tables through excel files. It let you to se
 
 
 ## Example
-<img src="./docs/comparation.jpg" width="80%"> <br/>
+<img src="./docs/comparation.jpg" width="96%"> <br/>
 
 
 ## How to use
